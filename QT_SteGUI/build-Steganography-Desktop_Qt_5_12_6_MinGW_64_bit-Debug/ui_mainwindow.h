@@ -27,6 +27,8 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -34,9 +36,9 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(700, 350);
-        MainWindow->setMinimumSize(QSize(700, 350));
-        MainWindow->setMaximumSize(QSize(700, 350));
+        MainWindow->resize(700, 550);
+        MainWindow->setMinimumSize(QSize(700, 550));
+        MainWindow->setMaximumSize(QSize(700, 550));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         pushButton = new QPushButton(centralwidget);
@@ -44,13 +46,19 @@ public:
         pushButton->setGeometry(QRect(50, 30, 601, 51));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(50, 120, 601, 51));
+        pushButton_2->setGeometry(QRect(50, 300, 601, 51));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(50, 210, 291, 51));
+        pushButton_3->setGeometry(QRect(50, 400, 291, 51));
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(370, 210, 281, 51));
+        pushButton_4->setGeometry(QRect(370, 400, 281, 51));
+        pushButton_5 = new QPushButton(centralwidget);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(50, 100, 601, 51));
+        pushButton_6 = new QPushButton(centralwidget);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(50, 170, 601, 51));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -68,10 +76,12 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "HideYourMum", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "Add File", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Add Image", nullptr));
         pushButton_2->setText(QApplication::translate("MainWindow", "Extract File", nullptr));
         pushButton_3->setText(QApplication::translate("MainWindow", "About", nullptr));
         pushButton_4->setText(QApplication::translate("MainWindow", "Exit", nullptr));
+        pushButton_5->setText(QApplication::translate("MainWindow", "Add Audio", nullptr));
+        pushButton_6->setText(QApplication::translate("MainWindow", "Add Video", nullptr));
     } // retranslateUi
 
 };

@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,17 +17,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     addfile.cpp \
+    addfile_audio.cpp \
     extractfile.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     addfile.h \
+    addfile_audio.h \
     extractfile.h \
     mainwindow.h
 
 FORMS += \
     addfile.ui \
+    addfile_audio.ui \
     extractfile.ui \
     mainwindow.ui
 

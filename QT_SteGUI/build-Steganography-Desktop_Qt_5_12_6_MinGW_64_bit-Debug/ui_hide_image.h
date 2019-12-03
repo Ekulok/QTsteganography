@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'addfile.ui'
+** Form generated from reading UI file 'hide_image.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_ADDFILE_H
-#define UI_ADDFILE_H
+#ifndef UI_HIDE_IMAGE_H
+#define UI_HIDE_IMAGE_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -42,7 +42,7 @@ public:
         AddFile->setSizeIncrement(QSize(700, 600));
         buttonBox = new QDialogButtonBox(AddFile);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
-        buttonBox->setGeometry(QRect(350, 560, 341, 32));
+        buttonBox->setGeometry(QRect(340, 540, 341, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         groupBox = new QGroupBox(AddFile);
@@ -62,7 +62,7 @@ public:
         pushButton->setGeometry(QRect(450, 370, 151, 51));
         label_image = new QLabel(AddFile);
         label_image->setObjectName(QString::fromUtf8("label_image"));
-        label_image->setGeometry(QRect(30, 30, 641, 311));
+        label_image->setGeometry(QRect(30, 30, 631, 301));
 
         retranslateUi(AddFile);
         QObject::connect(buttonBox, SIGNAL(accepted()), AddFile, SLOT(accept()));
@@ -73,7 +73,7 @@ public:
 
     void retranslateUi(QDialog *AddFile)
     {
-        AddFile->setWindowTitle(QApplication::translate("AddFile", "Add Image", nullptr));
+        AddFile->setWindowTitle(QApplication::translate("AddFile", "Add file", nullptr));
         groupBox->setTitle(QApplication::translate("AddFile", "Password", nullptr));
         groupBox_2->setTitle(QApplication::translate("AddFile", "Input Text", nullptr));
         pushButton->setText(QApplication::translate("AddFile", "Open File...", nullptr));
@@ -88,4 +88,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_ADDFILE_H
+#endif // UI_HIDE_IMAGE_H
